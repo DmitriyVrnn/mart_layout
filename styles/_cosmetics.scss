@@ -1,0 +1,374 @@
+@import "_fonts.scss";
+@import "_vars.scss";
+@import "_modules.scss";
+.top-line {
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: white;
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.logo {
+    span {
+        color: $main-color;
+        font-weight: 700;
+    }
+    font-size: 28px;
+}
+
+.top-nav {
+    a {
+        @include mt(0.5s);
+        font-family: "OpenSansBold";
+        font-size: 14px;
+        &:first-child {
+            color: $main-color;
+        }
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+.cart {
+    span {
+        font-family: "RobotoLight";
+        padding-right: 10px;
+    }
+    .count {
+        color: $main-color;
+    }
+}
+
+.arrows-block>img {
+    &:hover {
+        background: lighten($color: $main-color, $amount: 10);
+    }
+}
+
+.label1-slide {
+    @extend .label-slide;
+}
+
+.label2-slide {
+    font-weight: 600;
+    @extend .label-slide;
+}
+
+.btn-slide {
+    cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid $main-color;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-out;
+    &:hover {
+        background: darken($color: $main-color, $amount: 10)
+    }
+    &:active {
+        background: darken($color: $main-color, $amount: 15)
+    }
+}
+
+.img-about {
+    h3 {
+        text-transform: uppercase;
+    }
+    .icon {
+        font-size: 70px;
+    }
+    &:hover {
+        color: $main-color;
+        p {
+            color: black;
+        }
+    }
+}
+
+.collection-section {
+    background-color: #e9f0fd;
+    .type-clothes {
+        @extend .type-clothes-title-cosmetics;
+    }
+}
+
+.fas,
+.far {
+    margin-left: -4px;
+}
+
+.btn-like,
+.btn-random,
+.btn-clock {
+    @extend .btn-cosmetics-collection;
+    &:hover {
+        background: $main-color;
+    }
+}
+
+.btn-add {
+    height: 48px;
+    width: 150px;
+    padding: 5px 15px;
+    border: 1px solid white;
+    background: #323232;
+    color: white;
+    text-transform: uppercase;
+    font-family: "OpenSansLight";
+    font-size: 14px;
+    @include mt(0.5s);
+    cursor: pointer;
+    .fa-cart-plus {
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    &:hover {
+        background: $main-color;
+    }
+}
+
+.background {
+    background-color: black;
+    filter: alpha(50%);
+}
+
+.overlay {
+    @include mt(0.5s);
+}
+
+.buttons-categories {
+    button {
+        text-transform: uppercase;
+        font-family: "RobotoLight";
+        border-radius: 2px;
+        border: 2px solid #cacaca;
+        background: rgba(255, 255, 255, 0.1);
+        color: #323232;
+        &:hover {
+            background: $main-color;
+            color: white;
+            @include mt(0.5s);
+        }
+    }
+    .circle {
+        background: white;
+        border: 1px solid #323232;
+        span {
+            color: $main-color;
+        }
+        @include mt(0.5s);
+    }
+}
+
+.featured-products-section {
+    .type-clothes {
+        @extend .type-clothes-title-cosmetics;
+    }
+}
+
+.item-status-top,
+.item-status-bottom {
+    text-transform: uppercase;
+    font-size: 16px;
+    span {
+        border: 1px solid black;
+    }
+}
+
+.section-sale-season {
+    .title1 {
+        font-family: "OpenSansExtrabold";
+        font-size: 72px;
+        text-transform: uppercase;
+        color: white;
+    }
+    .title2 {
+        color: white;
+        font-family: "OpenSansLight";
+        font-size: 43px;
+    }
+}
+
+.section-customer-review {
+    .name {
+        color: $main-color;
+        font-family: "OpenSansBold";
+        font-size: 18px;
+    }
+    .bottom-client {
+        img {
+            border: 5px solid black;
+            border-radius: 50px;
+            cursor: pointer;
+            &:hover,
+            &:active {
+                border: 5px solid $main-color;
+                width: 90px;
+                height: 90px;
+                @include mt(0.5s);
+            }
+            @include mt(0.5s);
+        }
+    }
+}
+
+.section-newsletter {
+    background-image: url(../img/newsletter/background.png);
+    background-size: contain;
+    background-repeat: round;
+    height: 100%;
+    width: 100%;
+    .label {
+        color: white;
+        font-size: 13px;
+    }
+    input {
+        border-radius: 5px;
+    }
+}
+
+.input {
+    button {
+        cursor: pointer;
+        background: #4ec6ab;
+        border: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        &:hover {
+            @include mt(0.5s);
+            background: darken($color: #4ec6ab, $amount: 10);
+        }
+        &:active {
+            background: darken($color: #4ec6ab, $amount: 15);
+        }
+        @include mt(0.5s);
+    }
+}
+
+.section-partners {
+    background: #e9f0fd;
+    img {
+        border: 1px solid $main-color;
+    }
+}
+
+.section-news {
+    span {
+        font-family: "OpenSansSemibold";
+        font-size: 18px;
+    }
+    .border {
+        background: $main-color;
+    }
+    p {
+        font-size: 14px;
+    }
+    button {
+        cursor: pointer;
+        background: $main-color;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-family: "OpenSansLight";
+        outline: none;
+        &:hover {
+            @include mt(0.5s);
+            background: darken($color: $main-color, $amount: 10)
+        }
+        &:active {
+            background: darken($color: $main-color, $amount: 15)
+        }
+        @include mt(0.5s);
+    }
+}
+
+.section-get-in-touch {
+    background-image: url(../img/get_in_touch/background.png);
+    background-size: contain;
+    background-repeat: round;
+    max-height: 100%;
+    max-width: 100%;
+    h1 {
+        color: white;
+    }
+    h2 {
+        color: white;
+        font-size: 72px;
+        font-family: "RobotoLight";
+        span {
+            color: $main-color;
+        }
+    }
+    span {
+        color: white;
+        font-family: "RobotoLight";
+    }
+    p {
+        font-size: 13px;
+        color: white;
+    }
+    .contacts {
+        font-size: 14px;
+        span {
+            color: $main-color;
+            font-family: "RobotoBold";
+        }
+        .info {
+            color: white;
+            font-family: "RobotoLight";
+        }
+    }
+    .icons {
+        i {
+            color: white;
+            border: 1px solid white;
+            &:hover {
+                background: $main-color;
+                @include mt(0.5s);
+            }
+            @include mt(0.5s);
+        }
+    }
+    input,
+    textarea {
+        background-color: transparent;
+        border: 1px solid white;
+        outline: none;
+
+        &:focus{
+            border: 1px solid $main-color;
+            color: $main-color;
+        }
+    }
+    .colortext {
+        color: white;
+    }
+    input[type="text"]::placeholder,
+    textarea[type="text"]::placeholder {
+        color: white;
+    }
+    ;
+    button {
+        cursor: pointer;
+        text-transform: uppercase;
+        background: $main-color;
+        border: none;
+        color: white;
+        font-family: "OpenSansLight";
+        outline: none;
+        &:hover {
+            @include mt(0.5s);
+            background: darken($color: $main-color, $amount: 10)
+        }
+        &:active {
+            background: darken($color: $main-color, $amount: 15)
+        }
+        @include mt(0.5s);
+    }
+}
